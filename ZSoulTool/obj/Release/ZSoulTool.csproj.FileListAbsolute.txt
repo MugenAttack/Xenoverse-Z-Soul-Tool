@@ -1,0 +1,9 @@
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\bin\Release\ZSoulTool.exe.config
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\bin\Release\ZSoulTool.exe
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\bin\Release\ZSoulTool.pdb
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Release\ZSoulTool.Form1.resources
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Release\ZSoulTool.Properties.Resources.resources
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Release\ZSoulTool.csproj.GenerateResource.Cache
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Release\ZSoulTool.exe
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Release\ZSoulTool.pdb
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Release\ZSoulTool.csprojResolveAssemblyReference.cache
