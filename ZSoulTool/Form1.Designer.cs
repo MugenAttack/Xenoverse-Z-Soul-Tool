@@ -110,6 +110,8 @@
             this.patchesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patchAllForStoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemList = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtModelID = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -207,6 +209,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.txtModelID);
+            this.tabPage2.Controls.Add(this.label22);
             this.tabPage2.Controls.Add(this.txtEditValueb);
             this.tabPage2.Controls.Add(this.txtEditNameb);
             this.tabPage2.Controls.Add(this.label6);
@@ -747,14 +751,14 @@
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -877,6 +881,23 @@
             this.itemList.TabIndex = 3;
             this.itemList.SelectedIndexChanged += new System.EventHandler(this.itemList_SelectedIndexChanged);
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(162, 109);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(50, 13);
+            this.label22.TabIndex = 17;
+            this.label22.Text = "Model ID";
+            // 
+            // txtModelID
+            // 
+            this.txtModelID.Location = new System.Drawing.Point(225, 106);
+            this.txtModelID.Name = "txtModelID";
+            this.txtModelID.Size = new System.Drawing.Size(100, 20);
+            this.txtModelID.TabIndex = 18;
+            this.txtModelID.TextChanged += new System.EventHandler(this.txtModelID_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -887,7 +908,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Z - Soul Tool 1.1.1 by MugenAttack";
+            this.Text = "IDB Tool by MugenAttack";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -988,6 +1009,8 @@
         private System.Windows.Forms.ToolStripMenuItem patchAllForStoreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem replaceImportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem1;
+        private System.Windows.Forms.TextBox txtModelID;
+        private System.Windows.Forms.Label label22;
     }
 }
 

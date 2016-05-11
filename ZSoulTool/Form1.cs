@@ -136,13 +136,13 @@ namespace ZSoulTool
                 return;
 
             int count = 0;
-            if (browseFile.FileName.Contains("talisman"))
-            {
+           // if (browseFile.FileName.Contains("tal"))
+            //{
                 FileName = browseFile.FileName;
                 //MessageBox.Show(FileName);
                 idbfile = File.ReadAllBytes(FileName);
                 count = BitConverter.ToInt32(idbfile, 8);
-            }
+            //}
 
             if (chkMsgName.Checked)
             {
@@ -154,7 +154,7 @@ namespace ZSoulTool
                     NamesLoaded = true;
 
 
-                if (browseFile.FileName.Contains("talisman_name") && NamesLoaded)
+                if (browseFile.FileName.Contains("name") && NamesLoaded)
                 {
                     FileNameMsgN = browseFile.FileName;
                     Names = msgStream.Load(FileNameMsgN);
@@ -171,7 +171,7 @@ namespace ZSoulTool
                     DescsLoaded = true;
 
 
-                if (browseFile.FileName.Contains("talisman_info") && DescsLoaded)
+                if (browseFile.FileName.Contains("info") && DescsLoaded)
                 {
                     FileNameMsgD = browseFile.FileName;
                     Descs = msgStream.Load(FileNameMsgD);
@@ -638,7 +638,7 @@ namespace ZSoulTool
             txtDescID.Text = BitConverter.ToInt16(Items[itemList.SelectedIndex].Data, 6).ToString();
             txtBuy.Text = BitConverter.ToInt32(Items[itemList.SelectedIndex].Data, 16).ToString();
             txtSell.Text = BitConverter.ToInt32(Items[itemList.SelectedIndex].Data, 20).ToString();
-
+            txtModelID.Text = BitConverter.ToInt32(Items[itemList.SelectedIndex].Data, 612).ToString();
             for (int i = 0; i < lstvBasic.Items.Count; i++)
             {
                 lstvBasic.Items[i].SubItems[1].Text = BitConverter.ToSingle(Items[itemList.SelectedIndex].Data, 32 + (i * 4)).ToString();
@@ -1041,6 +1041,16 @@ namespace ZSoulTool
             {
                 int sellValue = BitConverter.ToInt32(Items[i].Data, 20);
                 Array.Copy(BitConverter.GetBytes(sellValue * 2), 0, Items[i].Data, 16, 4);
+            }
+        }
+
+        private void txtModelID_TextChanged(object sender, EventArgs e)
+        {
+            if (!lockMod)
+            {
+                int n;
+                if (int.TryParse(txtModelID.Text, out n))
+                    Array.Copy(BitConverter.GetBytes(n), 0, Items[itemList.SelectedIndex].Data, 612, 4);
             }
         }
     }

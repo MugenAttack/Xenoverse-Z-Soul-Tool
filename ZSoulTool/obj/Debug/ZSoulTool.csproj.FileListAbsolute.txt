@@ -7,3 +7,6 @@ c:\users\gaming-pc\documents\visual studio 2015\Projects\ZSoulTool\ZSoulTool\obj
 c:\users\gaming-pc\documents\visual studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Debug\ZSoulTool.csproj.GenerateResource.Cache
 c:\users\gaming-pc\documents\visual studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Debug\ZSoulTool.exe
 c:\users\gaming-pc\documents\visual studio 2015\Projects\ZSoulTool\ZSoulTool\obj\Debug\ZSoulTool.pdb
+C:\Users\jerem\Documents\GitHub\Xenoverse-Z-Soul-Tool\ZSoulTool\bin\Debug\ZSoulTool.exe.config
+C:\Users\jerem\Documents\GitHub\Xenoverse-Z-Soul-Tool\ZSoulTool\obj\Debug\ZSoulTool.exe
+C:\Users\jerem\Documents\GitHub\Xenoverse-Z-Soul-Tool\ZSoulTool\obj\Debug\ZSoulTool.pdb
