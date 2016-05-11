@@ -131,7 +131,7 @@ namespace ZSoulTool
             //load talisman
             OpenFileDialog browseFile = new OpenFileDialog();
             browseFile.Filter = "Xenoverse idb (*.idb)|*.idb";
-            browseFile.Title = "Browse for Talisman idb File";
+            browseFile.Title = "Browse for  idb File";
             if (browseFile.ShowDialog() == DialogResult.Cancel)
                 return;
 
@@ -149,7 +149,7 @@ namespace ZSoulTool
                 //load msgfile for names
                 browseFile = new OpenFileDialog();
                 browseFile.Filter = "Xenoverse msg (*.msg)|*.msg";
-                browseFile.Title = "Browse for talisman msg name File";
+                browseFile.Title = "Browse for msg name File";
                 if (!(browseFile.ShowDialog() == DialogResult.Cancel))
                     NamesLoaded = true;
 
@@ -166,7 +166,7 @@ namespace ZSoulTool
                 //load msgfile for names
                 browseFile = new OpenFileDialog();
                 browseFile.Filter = "Xenoverse msg (*.msg)|*.msg";
-                browseFile.Title = "Browse for talisman msg info File";
+                browseFile.Title = "Browse for msg info File";
                 if (!(browseFile.ShowDialog() == DialogResult.Cancel))
                     DescsLoaded = true;
 
