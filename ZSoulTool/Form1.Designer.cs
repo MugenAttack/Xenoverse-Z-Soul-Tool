@@ -770,8 +770,8 @@
             this.replaceImportToolStripMenuItem,
             this.exportToolStripMenuItem1});
             this.addNewZSoulToolStripMenuItem.Name = "addNewZSoulToolStripMenuItem";
-            this.addNewZSoulToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.addNewZSoulToolStripMenuItem.Text = "Z-Soul";
+            this.addNewZSoulToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.addNewZSoulToolStripMenuItem.Text = "IDB";
             // 
             // addToolStripMenuItem
             // 
