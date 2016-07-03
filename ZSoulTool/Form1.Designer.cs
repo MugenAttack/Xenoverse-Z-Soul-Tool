@@ -37,6 +37,8 @@
             this.chkMsgDesc = new System.Windows.Forms.CheckBox();
             this.chkMsgName = new System.Windows.Forms.CheckBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txtModelID = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.txtEditValueb = new System.Windows.Forms.TextBox();
             this.txtEditNameb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -110,8 +112,8 @@
             this.patchesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patchAllForStoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemList = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtModelID = new System.Windows.Forms.TextBox();
+            this.noGainNoLossPatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.noNegativePatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -129,7 +131,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 54);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(463, 403);
+            this.tabControl1.Size = new System.Drawing.Size(463, 478);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -143,7 +145,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(455, 377);
+            this.tabPage1.Size = new System.Drawing.Size(455, 452);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Msg Details";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -162,7 +164,7 @@
             this.txtMsgDesc.Location = new System.Drawing.Point(6, 122);
             this.txtMsgDesc.Multiline = true;
             this.txtMsgDesc.Name = "txtMsgDesc";
-            this.txtMsgDesc.Size = new System.Drawing.Size(443, 249);
+            this.txtMsgDesc.Size = new System.Drawing.Size(443, 60);
             this.txtMsgDesc.TabIndex = 14;
             this.txtMsgDesc.TextChanged += new System.EventHandler(this.txtMsgDesc_TextChanged);
             // 
@@ -229,14 +231,31 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(455, 377);
+            this.tabPage2.Size = new System.Drawing.Size(455, 452);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Basic Details";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // txtModelID
+            // 
+            this.txtModelID.Location = new System.Drawing.Point(221, 118);
+            this.txtModelID.Name = "txtModelID";
+            this.txtModelID.Size = new System.Drawing.Size(100, 20);
+            this.txtModelID.TabIndex = 18;
+            this.txtModelID.TextChanged += new System.EventHandler(this.txtModelID_TextChanged);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(158, 121);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(50, 13);
+            this.label22.TabIndex = 17;
+            this.label22.Text = "Model ID";
+            // 
             // txtEditValueb
             // 
-            this.txtEditValueb.Location = new System.Drawing.Point(225, 132);
+            this.txtEditValueb.Location = new System.Drawing.Point(221, 144);
             this.txtEditValueb.Name = "txtEditValueb";
             this.txtEditValueb.Size = new System.Drawing.Size(188, 20);
             this.txtEditValueb.TabIndex = 16;
@@ -244,7 +263,7 @@
             // 
             // txtEditNameb
             // 
-            this.txtEditNameb.Location = new System.Drawing.Point(31, 132);
+            this.txtEditNameb.Location = new System.Drawing.Point(27, 144);
             this.txtEditNameb.Name = "txtEditNameb";
             this.txtEditNameb.ReadOnly = true;
             this.txtEditNameb.Size = new System.Drawing.Size(188, 20);
@@ -253,7 +272,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(225, 61);
+            this.label6.Location = new System.Drawing.Point(221, 73);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 13);
             this.label6.TabIndex = 13;
@@ -261,7 +280,7 @@
             // 
             // txtSell
             // 
-            this.txtSell.Location = new System.Drawing.Point(225, 80);
+            this.txtSell.Location = new System.Drawing.Point(221, 92);
             this.txtSell.Name = "txtSell";
             this.txtSell.Size = new System.Drawing.Size(188, 20);
             this.txtSell.TabIndex = 12;
@@ -270,7 +289,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 61);
+            this.label5.Location = new System.Drawing.Point(27, 73);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(138, 13);
             this.label5.TabIndex = 11;
@@ -278,7 +297,7 @@
             // 
             // txtBuy
             // 
-            this.txtBuy.Location = new System.Drawing.Point(31, 80);
+            this.txtBuy.Location = new System.Drawing.Point(27, 92);
             this.txtBuy.Name = "txtBuy";
             this.txtBuy.Size = new System.Drawing.Size(188, 20);
             this.txtBuy.TabIndex = 10;
@@ -287,7 +306,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(125, 13);
+            this.label4.Location = new System.Drawing.Point(121, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 9;
@@ -296,7 +315,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(322, 13);
+            this.label3.Location = new System.Drawing.Point(318, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 13);
             this.label3.TabIndex = 8;
@@ -304,7 +323,7 @@
             // 
             // txtDescID
             // 
-            this.txtDescID.Location = new System.Drawing.Point(322, 32);
+            this.txtDescID.Location = new System.Drawing.Point(318, 44);
             this.txtDescID.Name = "txtDescID";
             this.txtDescID.Size = new System.Drawing.Size(91, 20);
             this.txtDescID.TabIndex = 7;
@@ -313,7 +332,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(225, 13);
+            this.label2.Location = new System.Drawing.Point(221, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 6;
@@ -321,7 +340,7 @@
             // 
             // txtNameID
             // 
-            this.txtNameID.Location = new System.Drawing.Point(225, 32);
+            this.txtNameID.Location = new System.Drawing.Point(221, 44);
             this.txtNameID.Name = "txtNameID";
             this.txtNameID.Size = new System.Drawing.Size(91, 20);
             this.txtNameID.TabIndex = 5;
@@ -336,7 +355,7 @@
             "3",
             "4",
             "5"});
-            this.cbStar.Location = new System.Drawing.Point(128, 32);
+            this.cbStar.Location = new System.Drawing.Point(124, 44);
             this.cbStar.Name = "cbStar";
             this.cbStar.Size = new System.Drawing.Size(91, 21);
             this.cbStar.TabIndex = 4;
@@ -345,7 +364,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 13);
+            this.label1.Location = new System.Drawing.Point(27, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 3;
@@ -353,7 +372,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(31, 32);
+            this.txtID.Location = new System.Drawing.Point(27, 44);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(91, 20);
@@ -367,10 +386,10 @@
             this.columnHeader9});
             this.lstvBasic.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lstvBasic.HideSelection = false;
-            this.lstvBasic.Location = new System.Drawing.Point(4, 158);
+            this.lstvBasic.Location = new System.Drawing.Point(5, 183);
             this.lstvBasic.MultiSelect = false;
             this.lstvBasic.Name = "lstvBasic";
-            this.lstvBasic.Size = new System.Drawing.Size(445, 213);
+            this.lstvBasic.Size = new System.Drawing.Size(445, 263);
             this.lstvBasic.TabIndex = 1;
             this.lstvBasic.TileSize = new System.Drawing.Size(200, 30);
             this.lstvBasic.UseCompatibleStateImageBehavior = false;
@@ -403,7 +422,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(455, 377);
+            this.tabPage3.Size = new System.Drawing.Size(455, 452);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Effect 1 Details";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -427,7 +446,7 @@
             // 
             // txtEditValue1
             // 
-            this.txtEditValue1.Location = new System.Drawing.Point(230, 199);
+            this.txtEditValue1.Location = new System.Drawing.Point(227, 274);
             this.txtEditValue1.Name = "txtEditValue1";
             this.txtEditValue1.Size = new System.Drawing.Size(188, 20);
             this.txtEditValue1.TabIndex = 29;
@@ -435,7 +454,7 @@
             // 
             // txtEditName1
             // 
-            this.txtEditName1.Location = new System.Drawing.Point(36, 199);
+            this.txtEditName1.Location = new System.Drawing.Point(33, 274);
             this.txtEditName1.Name = "txtEditName1";
             this.txtEditName1.ReadOnly = true;
             this.txtEditName1.Size = new System.Drawing.Size(188, 20);
@@ -544,7 +563,7 @@
             this.columnHeader3});
             this.lstvEffect1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lstvEffect1.HideSelection = false;
-            this.lstvEffect1.Location = new System.Drawing.Point(4, 225);
+            this.lstvEffect1.Location = new System.Drawing.Point(5, 300);
             this.lstvEffect1.MultiSelect = false;
             this.lstvEffect1.Name = "lstvEffect1";
             this.lstvEffect1.Size = new System.Drawing.Size(445, 146);
@@ -579,7 +598,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(455, 377);
+            this.tabPage4.Size = new System.Drawing.Size(455, 452);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Effect 2 Details";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -603,7 +622,7 @@
             // 
             // txtEditValue2
             // 
-            this.txtEditValue2.Location = new System.Drawing.Point(230, 199);
+            this.txtEditValue2.Location = new System.Drawing.Point(227, 274);
             this.txtEditValue2.Name = "txtEditValue2";
             this.txtEditValue2.Size = new System.Drawing.Size(188, 20);
             this.txtEditValue2.TabIndex = 42;
@@ -611,7 +630,7 @@
             // 
             // txtEditName2
             // 
-            this.txtEditName2.Location = new System.Drawing.Point(36, 199);
+            this.txtEditName2.Location = new System.Drawing.Point(33, 274);
             this.txtEditName2.Name = "txtEditName2";
             this.txtEditName2.ReadOnly = true;
             this.txtEditName2.Size = new System.Drawing.Size(188, 20);
@@ -711,7 +730,7 @@
             this.columnHeader5});
             this.lstvEffect2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lstvEffect2.HideSelection = false;
-            this.lstvEffect2.Location = new System.Drawing.Point(4, 225);
+            this.lstvEffect2.Location = new System.Drawing.Point(5, 300);
             this.lstvEffect2.MultiSelect = false;
             this.lstvEffect2.Name = "lstvEffect2";
             this.lstvEffect2.Size = new System.Drawing.Size(445, 146);
@@ -751,14 +770,14 @@
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -859,7 +878,9 @@
             // patchesToolStripMenuItem
             // 
             this.patchesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.patchAllForStoreToolStripMenuItem});
+            this.patchAllForStoreToolStripMenuItem,
+            this.noGainNoLossPatchToolStripMenuItem,
+            this.noNegativePatchToolStripMenuItem});
             this.patchesToolStripMenuItem.Name = "patchesToolStripMenuItem";
             this.patchesToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.patchesToolStripMenuItem.Text = "Patches";
@@ -868,7 +889,7 @@
             // patchAllForStoreToolStripMenuItem
             // 
             this.patchAllForStoreToolStripMenuItem.Name = "patchAllForStoreToolStripMenuItem";
-            this.patchAllForStoreToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.patchAllForStoreToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.patchAllForStoreToolStripMenuItem.Text = "Store Patch";
             this.patchAllForStoreToolStripMenuItem.Click += new System.EventHandler(this.patchAllForStoreToolStripMenuItem_Click);
             // 
@@ -881,28 +902,25 @@
             this.itemList.TabIndex = 3;
             this.itemList.SelectedIndexChanged += new System.EventHandler(this.itemList_SelectedIndexChanged);
             // 
-            // label22
+            // noGainNoLossPatchToolStripMenuItem
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(162, 109);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(50, 13);
-            this.label22.TabIndex = 17;
-            this.label22.Text = "Model ID";
+            this.noGainNoLossPatchToolStripMenuItem.Name = "noGainNoLossPatchToolStripMenuItem";
+            this.noGainNoLossPatchToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.noGainNoLossPatchToolStripMenuItem.Text = "No Gain, No Loss Patch";
+            this.noGainNoLossPatchToolStripMenuItem.Click += new System.EventHandler(this.noGainNoLossPatchToolStripMenuItem_Click);
             // 
-            // txtModelID
+            // noNegativePatchToolStripMenuItem
             // 
-            this.txtModelID.Location = new System.Drawing.Point(225, 106);
-            this.txtModelID.Name = "txtModelID";
-            this.txtModelID.Size = new System.Drawing.Size(100, 20);
-            this.txtModelID.TabIndex = 18;
-            this.txtModelID.TextChanged += new System.EventHandler(this.txtModelID_TextChanged);
+            this.noNegativePatchToolStripMenuItem.Name = "noNegativePatchToolStripMenuItem";
+            this.noNegativePatchToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.noNegativePatchToolStripMenuItem.Text = "No Negative Patch";
+            this.noNegativePatchToolStripMenuItem.Click += new System.EventHandler(this.noNegativePatchToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 466);
+            this.ClientSize = new System.Drawing.Size(487, 544);
             this.Controls.Add(this.itemList);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
@@ -1011,6 +1029,8 @@
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem1;
         private System.Windows.Forms.TextBox txtModelID;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ToolStripMenuItem noGainNoLossPatchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem noNegativePatchToolStripMenuItem;
     }
 }
 

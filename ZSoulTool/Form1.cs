@@ -1053,6 +1053,40 @@ namespace ZSoulTool
                     Array.Copy(BitConverter.GetBytes(n), 0, Items[itemList.SelectedIndex].Data, 612, 4);
             }
         }
+
+        private void noGainNoLossPatchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Items.Length; i++)
+            {
+                for (int j = 0; j < 25; j++)
+                {
+                    float v = BitConverter.ToSingle(Items[i].Data, 32 + (j * 4));
+                    if (v != 1)
+                        v = 1;
+
+                    Array.Copy(BitConverter.GetBytes(v), 0, Items[i].Data, 32 + (j * 4), 4);
+
+                }
+            }
+            UpdateData();
+        }
+
+        private void noNegativePatchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Items.Length; i++)
+            {
+                for (int j = 0; j < 25; j++)
+                {
+                    float v = BitConverter.ToSingle(Items[i].Data, 32 + (j * 4));
+                    if (v < 1)
+                        v = 1;
+
+                    Array.Copy(BitConverter.GetBytes(v), 0, Items[i].Data, 32 + (j * 4), 4);
+
+                }
+            }
+            UpdateData();
+        }
     }
     
 }
